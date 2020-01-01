@@ -33,8 +33,8 @@ func main() {
 
 		var (
 			query = strings.Trim(lineWord, "\n")
-			from  = "en"
 			to    = "id"
+			from  = "en"
 		)
 
 		// API for dictionary
@@ -54,7 +54,7 @@ func main() {
 		bodyStr := string(body)
 
 		// Create directorh
-		dirDict := CreateDir("enid-dicts")
+		dirDict := CreateDir("resources")
 		// log.Printf("Create `%s` directory.", dirDict)
 
 		// Create json file
